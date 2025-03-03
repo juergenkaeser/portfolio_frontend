@@ -114,7 +114,7 @@ function addObserver() {
   // TODO: Make breakpoint work in media-querys
   --bg-color: #18181b;
   --font-color-primary: #eefff7;
-  --font-color-secondary: #4dde96;
+  --font-color-secondary: #66d0e8;
   --font-color-secondary-dark: #45444f;
   --spacing-s: 4px;
   --spacing-m: 8px;
