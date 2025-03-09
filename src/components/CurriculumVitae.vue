@@ -34,7 +34,7 @@ import data from '../assets/data.json';
 
 <style lang="scss">
 .background-container-cv {
-  background: rgba(0, 0, 0, 0.85) url('../assets/laptop-with-code.JPG');
+  background: rgba(0, 0, 0, 0.85) url('../assets/code-example.jpg');
   background-position: center;
   background-size: cover;
   height: 100%;
