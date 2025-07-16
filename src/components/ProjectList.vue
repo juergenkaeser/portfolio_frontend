@@ -24,53 +24,35 @@ onMounted(() => {
     <h2 class="projects__title">Projekte</h2>
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides">
-        <li class="glide__slide">
+        <li
+          class="glide__slide"
+          v-for="(project, index) in data.projects"
+          :key="index"
+        >
           <ProjectItem>
-            <template #headline>{{ data.projects[0].headline }}</template>
-            <template #subline>{{ data.projects[0].subline }}</template>
-            {{ data.projects[0].description }}
-          </ProjectItem>
-        </li>
-        <li class="glide__slide">
-          <ProjectItem>
-            <template #headline>{{ data.projects[1].headline }}</template>
-            <template #subline>{{ data.projects[1].subline }}</template>
-            {{ data.projects[1].description }}
-          </ProjectItem>
-        </li>
-        <li class="glide__slide">
-          <ProjectItem>
-            <template #headline>{{ data.projects[2].headline }}</template>
-            <template #subline>{{ data.projects[2].subline }}</template>
-            {{ data.projects[2].description }}
-          </ProjectItem>
-        </li>
-        <li class="glide__slide">
-          <ProjectItem>
-            <template #headline>{{ data.projects[3].headline }}</template>
-            <template #subline>{{ data.projects[3].subline }}</template>
-            {{ data.projects[3].description }}
-          </ProjectItem>
-        </li>
-        <li class="glide__slide">
-          <ProjectItem>
-            <template #headline>{{ data.projects[4].headline }}</template>
-            <template #subline>{{ data.projects[4].subline }}</template>
-            {{ data.projects[4].description }}
-            <br />
-            <br />
-            <a href="https://github.com/juergenkaeser/cv_frontend" target="_blank"
-              >Projekt auf GitHub</a
-            >
+            <template #headline>{{ project.headline }}</template>
+            <template #subline>{{ project.subline }}</template>
+            {{ project.description }}
+            <template v-if="index === data.projects.length - 1">
+              <br />
+              <br />
+              <a
+                href="https://github.com/juergenkaeser/portfolio_frontend"
+                target="_blank"
+              >
+                Zum Projekt auf GitHub
+              </a>
+            </template>
           </ProjectItem>
         </li>
       </ul>
       <div class="glide__bullets" data-glide-el="controls[nav]">
-        <button class="glide__bullet" data-glide-dir="=0"></button>
-        <button class="glide__bullet" data-glide-dir="=1"></button>
-        <button class="glide__bullet" data-glide-dir="=2"></button>
-        <button class="glide__bullet" data-glide-dir="=3"></button>
-        <button class="glide__bullet" data-glide-dir="=4"></button>
+        <button
+          v-for="(project, index) in data.projects"
+          :key="'bullet-' + index"
+          class="glide__bullet"
+          :data-glide-dir="'=' + index"
+        ></button>
       </div>
     </div>
     <div class="glide__arrows" data-glide-el="controls">
@@ -114,6 +96,16 @@ onMounted(() => {
 .glide {
   height: 100%;
   padding: var(--spacing-xl) var(--spacing-l);
+
+  // glide is used as background-container
+  background: url('../assets/code-example.jpg');
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  
+  @media (max-width: 768px) {
+    background: transparent;
+  }
 
   @media (min-width: 768px) {
     padding: var(--spacing-xxl) var(--spacing-l) var(--spacing-xxl) var(--spacing-l);
