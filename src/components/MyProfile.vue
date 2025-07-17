@@ -90,15 +90,16 @@ defineProps({
 <style lang="scss">
 .background-container {
   position: relative;
-  background: rgba(0, 0, 0, 0.75) url('../assets/lake-view.JPG');
-  background-blend-mode: darken;
-  background-position: center;
-  background-size: cover;
+  // background: rgba(0, 0, 0, 0.75) url('../assets/lake-view.JPG');
+  // background-blend-mode: darken;
+  // background-position: center;
+  // background-size: cover;
+  background-color: var(--bg-color-light);
   min-height: calc(100vh - var(--navi-height-mobile));
   padding: var(--spacing-l);
 
   @media (max-width: 768px) {
-    background: transparent;
+    //background: transparent;
     min-height: calc(100vh - var(--navi-height-desktop));
   }
 

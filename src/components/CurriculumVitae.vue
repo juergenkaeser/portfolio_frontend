@@ -37,6 +37,7 @@ import data from '../assets/data.json';
   padding: var(--spacing-xl) var(--spacing-l);
 
   @media (min-width: 768px) {
+    min-height: 100vh;
     padding: var(--spacing-xxl) var(--spacing-l) var(--spacing-xxl) var(--spacing-l);
   }
 

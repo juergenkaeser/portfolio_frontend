@@ -113,6 +113,7 @@ function addObserver() {
 :root {
   // TODO: Make breakpoint work in media-querys
   --bg-color: #262628;
+  --bg-color-light: #2e2e31;
   --font-color-primary: #dbfaff;
   --font-color-secondary: #66d7e8;
   --font-color-secondary-dark: #45444f;

@@ -98,14 +98,15 @@ onMounted(() => {
   padding: var(--spacing-xl) var(--spacing-l);
 
   // glide is used as background-container
-  background: url('../assets/code-example.jpg');
-  background-blend-mode: darken;
-  background-position: center;
-  background-size: cover;
-  
-  @media (max-width: 768px) {
-    background: transparent;
-  }
+  // background: url('../assets/code-example.jpg');
+  // background-position: center;
+  // background-size: cover;
+
+  // @media (max-width: 768px) {
+  //   background: var(--bg-color-light);
+  // }
+
+  background: var(--bg-color-light);
 
   @media (min-width: 768px) {
     padding: var(--spacing-xxl) var(--spacing-l) var(--spacing-xxl) var(--spacing-l);
