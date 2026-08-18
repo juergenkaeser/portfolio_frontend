@@ -219,24 +219,23 @@ a,
   }
 }
 
-h1,
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing-l);
+  font-weight: 600; // between default and bold
+  color: var(--font-color-primary);
+
+  @media (max-width: 420px) {
+    font-size: 120%;
+    margin-bottom: var(--spacing-s);
+  }
+}
+
 h2,
 h3 {
   color: var(--font-color-secondary);
   font-weight: bold;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
-  text-decoration: underline;
-  margin-bottom: var(--spacing-l);
-  color: var(--font-color-primary);
-
-  @media (max-width: 420px) {
-    font-size: 140%;
-    margin-bottom: var(--spacing-s);
-  }
 }
 
 h2 {

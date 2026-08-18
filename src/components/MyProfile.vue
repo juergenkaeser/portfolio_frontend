@@ -15,8 +15,8 @@ defineProps({
   <div class="background-container">
     <h1 class="profile__title">Portfolio von {{ data.firstName }} {{ data.lastName }}</h1>
     <h2 class="profile__title-underline">Über mich</h2>
-    <h3 class="profile__name">{{ data.firstName }} {{ data.lastName }}</h3>
-    <p class="profile__profession">{{ data.jobDescription }} aus {{ data.city }} mit Erfahrung in agilen Methoden und Scrum</p>
+    <h3 class="profile__name">{{ data.firstName }} {{ data.lastName }} - {{ data.jobDescription }} aus {{ data.city }}</h3>
+    <p class="profile__profession">Agile Entwicklung nach Scrum · Java & PL/SQL · IT-Koordination</p>
     <div class="profile__description-wrapper">
       <p class="profile__description-item">
         {{ data.descriptionText.text1 }}
