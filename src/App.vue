@@ -113,10 +113,10 @@ function addObserver() {
 :root {
   // TODO: Make breakpoint work in media-querys
   --bg-color: #262628;
-  --bg-color-light: #2e2e31;
-  --font-color-primary: #dbfaff;
-  --font-color-secondary: #66d7e8;
-  --font-color-secondary-dark: #45444f;
+  --bg-color-light: #2f2e31;
+  --font-color-primary: #fcfff0;
+  --font-color-secondary: #e1d129;
+  --font-color-secondary-dark: #44414a;
   --spacing-s: 4px;
   --spacing-m: 8px;
   --spacing-l: 16px;
@@ -229,7 +229,7 @@ h3 {
 h1 {
   display: flex;
   justify-content: center;
-  font-style: italic;
+  text-decoration: underline;
   margin-bottom: var(--spacing-l);
   color: var(--font-color-primary);
 

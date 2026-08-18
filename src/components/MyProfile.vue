@@ -16,7 +16,7 @@ defineProps({
     <h1 class="profile__title">Portfolio von {{ data.firstName }} {{ data.lastName }}</h1>
     <h2 class="profile__title-underline">Über mich</h2>
     <h3 class="profile__name">{{ data.firstName }} {{ data.lastName }}</h3>
-    <p class="profile__profession">{{ data.jobDescription }} aus {{ data.city }}</p>
+    <p class="profile__profession">{{ data.jobDescription }} aus {{ data.city }} mit Erfahrung in agilen Methoden und Scrum</p>
     <div class="profile__description-wrapper">
       <p class="profile__description-item">
         {{ data.descriptionText.text1 }}
@@ -59,30 +59,6 @@ defineProps({
           </g>
         </svg>
       </a>
-      <a href="https://www.xing.com/profile/Juergen_Kaeser6" target="_blank">
-        <svg
-          :fill="fontColorSecondary"
-          version="1.1"
-          id="Capa_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="98"
-          height="98"
-          viewBox="0 0 540.543 540.543"
-          xml:space="preserve"
-        >
-          <g>
-            <g>
-              <path
-                d="M129.989,378.772c8.274,0,15.361-5.006,21.243-15.036c53.813-95.423,81.806-145.093,83.991-149.028l-53.593-93.458    c-5.667-9.804-12.858-14.707-21.567-14.707H81.953c-5.019,0-8.495,1.634-10.459,4.902c-2.399,3.268-2.289,7.301,0.325,12.087    l52.613,91.176c0.214,0.232,0.214,0.331,0,0.331L41.75,361.453c-2.172,4.149-2.172,8.066,0,11.757    c2.173,3.715,5.557,5.562,10.129,5.562H129.989z"
-              />
-              <path
-                d="M488.492,0h-78.758c-8.495,0-15.472,4.902-20.912,14.707C277.053,212.97,219.206,315.596,215.283,322.555l110.784,203.282    c5.227,9.804,12.418,14.706,21.567,14.706h78.104c4.791,0,8.28-1.634,10.459-4.902c2.172-3.715,2.068-7.748-0.325-12.099    L326.073,322.555v-0.318L498.627,16.995c2.393-4.571,2.393-8.592,0-12.087C496.662,1.634,493.284,0,488.492,0z"
-              />
-            </g>
-          </g>
-        </svg>
-      </a>
     </div>
   </div>
 </template>
@@ -121,17 +97,14 @@ defineProps({
   .profile__profession,
   .profile__description-wrapper {
     margin-top: var(--spacing-m);
-  }
-
-  .profile__description-wrapper {
     max-width: 100%;
 
     @media (min-width: 768px) {
-      max-width: 50%;
+      max-width: 70%;
     }
 
     @media (min-width: 1200px) {
-      max-width: 30%;
+      max-width: 40%;
     }
   }
 
