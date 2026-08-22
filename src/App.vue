@@ -242,6 +242,7 @@ h2 {
   display: flex;
   justify-content: center;
   margin-bottom: var(--spacing-l);
+  text-decoration: underline;
 
   @media (max-width: 420px) {
     font-size: 130%;
