@@ -119,6 +119,7 @@ defineProps({
 
     @media (min-width: 768px) {
       max-width: 70%;
+          margin-bottom: calc(2 * var(--spacing-l));
     }
 
     img {
@@ -155,9 +156,12 @@ defineProps({
     margin-block-end: 0;
   }
 
-  .profile__profession,
   .profile__description-wrapper {
     margin-top: var(--spacing-m);
+  }
+
+  .profile__profession,
+  .profile__description-wrapper {
     max-width: 100%;
 
     @media (min-width: 768px) {
@@ -166,24 +170,27 @@ defineProps({
   }
 
   .profile__description-item {
-    margin-bottom: var(--spacing-l);
+    margin-bottom: var(--spacing-m);
+
+    @media (min-width: 768px) {
+      margin-bottom: var(--spacing-l);
+    }
   }
 
   h4 {
-    margin-top: var(--spacing-m);
+    margin-top: var(--spacing-l);
     font-weight: bold;
+
+    @media (min-width: 768px) {
+      margin-top: calc(2 * var(--spacing-l));
+    }
   }
 
   .links {
-    margin-top: var(--spacing-m);
-
-    @media (min-width: 768px) {
-      margin-top: var(--spacing-l);
-    }
-
     @media (max-width: 768px) {
       display: flex;
       justify-content: center;
+      margin-top: var(--spacing-s);
     }
 
     a {
