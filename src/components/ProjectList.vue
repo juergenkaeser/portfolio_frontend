@@ -15,7 +15,7 @@ defineProps({
 onMounted(() => {
   new Glide('.glide', {
     type: 'carousel',
-    autoplay: 8000,
+    autoplay: 12000,
     hoverpause: true,
     animationDuration: 1000
   }).mount({ Controls, Swipe, Autoplay })
