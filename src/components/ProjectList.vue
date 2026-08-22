@@ -163,6 +163,7 @@ onMounted(() => {
           padding: 0;
           border: 0;
           background-color: var(--font-color-primary);
+          transition: background-color 300ms ease-in-out;
 
           @media (min-width: 768px) {
             width: 24px;
@@ -174,8 +175,6 @@ onMounted(() => {
           }
 
           &:hover {
-            transition: background-color 0.3s ease-in-out;
-            background-color: var(--font-color-secondary);
             cursor: pointer;
           }
         }
