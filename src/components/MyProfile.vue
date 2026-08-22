@@ -16,7 +16,7 @@ defineProps({
     <h1 class="profile__title">Portfolio von {{ data.firstName }} {{ data.lastName }}</h1>
     <h2 class="profile__title-underline">Über mich</h2>
     <div class="profile__person-wrapper">
-      <img src="..\assets\profilepicture.png" alt="">
+      <img src="..\assets\profilepicture.png" alt="Profilbild">
       <div class="profile__person-text">
         <h3 class="profile__name">{{ data.firstName }} {{ data.lastName }} - {{ data.jobDescription }} aus {{ data.city }}</h3>
         <p class="profile__profession">Agile Softwareentwicklung · Professional Scrum Master (PSM I) · IT-Koordination</p>
@@ -123,6 +123,7 @@ defineProps({
 
     img {
       border-radius: 50%;
+      border: var(--spacing-s) solid var(--font-color-secondary);
       margin: auto var(--spacing-l) auto 0;
       max-height: 15vh;
 
