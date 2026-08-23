@@ -51,22 +51,34 @@ function removeActiveClass() {
   <ul class="navigation" ref="navigation" role="navigation">
     <li
       class="navigation-element active"
+      tabindex='0'
+      role="button"
+      aria-label="Zum Bereich Über mich"
       ref="naviElement0"
       @click="setActiveClick(naviElement0, 'navi-0-click')"
+      @keyup.enter="setActiveClick(naviElement0, 'navi-0-click')"
     >
       <p>Über mich</p>
     </li>
     <li
       class="navigation-element"
+      tabindex='0'
+      role="button"
+      aria-label="Zum Bereich Kenntnisse"
       ref="naviElement1"
       @click="setActiveClick(naviElement1, 'navi-1-click')"
+      @keyup.enter="setActiveClick(naviElement0, 'navi-1-click')"
     >
       <p>Kenntnisse</p>
     </li>
     <li
       class="navigation-element"
+      tabindex='0'
+      role="button"
+      aria-label="Zum Bereich Projekte"
       ref="naviElement2"
       @click="setActiveClick(naviElement2, 'navi-2-click')"
+      @keyup.enter="setActiveClick(naviElement0, 'navi-2-click')"
     >
       <p>Projekte</p>
     </li>
