@@ -10,7 +10,7 @@ import data from '../assets/data.json';
       <h3 class="cv-list-headline" role="label">{{ data.experiencesHeadline }}</h3>
       <ul class="cv-list">
         <li class="cv-list-item" v-for="(experience, index) in data.experiences" :key="'experience-' + index">
-          <span class="profession">{{ experience.job }}</span> - {{ experience.entry }}
+          {{ experience.job }}<span class="experience"> - {{ experience.entry }}</span>
         </li>
       </ul>
 
@@ -52,11 +52,13 @@ import data from '../assets/data.json';
 
     .cv-list {
       padding: 0; 
-      margin: var(--spacing-large) 0 0 0;
+      margin: var(--spacing-m) 0 var(--spacing-l) 0;
     }
 
     .cv-list-item {
-      .profession {
+      font-weight: 600;
+
+      .experience {
         font-style: italic;
       }
     }

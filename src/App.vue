@@ -115,7 +115,7 @@ function addObserver() {
   --bg-color: #262628;
   --bg-color-light: #2f2e31;
   --font-color-primary: #fcfff0;
-  --font-color-secondary: #5fafff;
+  --font-color-secondary: #53a9ff;
   --font-color-secondary-dark: #44414a;
   --spacing-s: 4px;
   --spacing-m: 8px;
@@ -203,6 +203,10 @@ p {
   @media (min-width: 768px) {
     font-size: 110%;
   }
+}
+
+.impressum-btn {
+  font-weight: bold;
 }
 
 a,
