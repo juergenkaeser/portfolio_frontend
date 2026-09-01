@@ -188,8 +188,11 @@ defineProps({
 
       svg {
         transition: transform 300ms ease-in-out;
+      }
 
-        &:hover {
+      // svg should not move on mobile devices
+      @media (hover: hover) {
+        svg:hover {
           transform: translateY(-8px);
         }
       }
