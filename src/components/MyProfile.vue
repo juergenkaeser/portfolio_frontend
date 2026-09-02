@@ -94,7 +94,7 @@ defineProps({
       max-width: 100%;
       margin-bottom: var(--spacing-l);
       background-color: var(--bg-color);
-      border: calc(var(--spacing-s) / 2) solid var(--font-color-primary);
+      border: calc(var(--spacing-s) / 4) solid var(--font-color-primary);
       border-radius: var(--spacing-l);
       padding: var(--spacing-l);
     }
@@ -122,7 +122,11 @@ defineProps({
       }
 
       h3 {
-        font-size: 100%
+        font-size: 130%;
+
+        @media (max-width: 768px) {
+          font-size: 100%;
+        }
       }
     }
   }
