@@ -87,18 +87,16 @@ defineProps({
 
   .profile__person-wrapper {
     display: flex;
-    max-width: 100%;
-    margin-bottom: var(--spacing-l);
-    background-color: var(--bg-color);
-    border-radius: var(--spacing-l);
-    padding: var(--spacing-m);
+    max-width: 70%;
+    margin-bottom: calc(2 * var(--spacing-l));
 
-    @media (min-width: 768px) {
-      max-width: 70%;
-      margin-bottom: calc(2 * var(--spacing-l));
-      background-color: transparent;
-      border-radius: 0;
-      padding: 0;
+    @media (max-width: 768px) {
+      max-width: 100%;
+      margin-bottom: var(--spacing-l);
+      background-color: var(--bg-color);
+      border: calc(var(--spacing-s) / 2) solid var(--font-color-primary);
+      border-radius: var(--spacing-l);
+      padding: var(--spacing-l);
     }
 
     img {
@@ -121,7 +119,11 @@ defineProps({
 
       p {
         max-width: 100%;
-      };
+      }
+
+      h3 {
+        font-size: 100%
+      }
     }
   }
 
